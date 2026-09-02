@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: composio-client
-  version: "1.43.0"
+  version: 1.43.0
 
 package:
   name: ${{ name|lower }}
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - hatchling ==1.26.3
     - hatch-fancy-pypi-readme
     - pip
